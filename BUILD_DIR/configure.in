@@ -51,7 +51,7 @@ AC_ARG_WITH(
   components,
   [AS_HELP_STRING([--with-components],
     [Specify a subset of existing HEADAS components to configure (enclosed in
-     quotes).  Current choices are: "heacore tcltk external attitude heatools heagen demo suzaku swift Xspec integral nustar astroh xmm glast ftools GSSC heasim". 
+     quotes).  Current choices are: "heacore tcltk external attitude heatools heagen demo suzaku swift Xspec integral nustar astroh xmm glast ftools GSSC heasim".
      Default is all existing components.])],
   h_components=$withval
 )
@@ -267,11 +267,11 @@ if test "x$h_components" != xno; then
       changequote(,)
       # Get next component from the back of the list.
       h_comp=`echo $h_dep | sed 's%.*[ 	][ 	]*%%'`
-  
+
       # Remove this component from the back of the list.
       h_dep=`echo $h_dep | sed -ne "s%[ 	][ 	]*$h_comp\$%%p"`
       changequote([,])
-      
+
       # Find the configuration directory.
       if test -f $h_top/$h_comp/BUILD_DIR/$hd_conf_file; then
         h_dir=$h_top/$h_comp/BUILD_DIR
@@ -518,7 +518,7 @@ fi
 # the needs of selected headas components (order is important here):
 #-------------------------------------------------------------------------------
 
-h_heacore_components="readline cfitsio ape heaio heautils ahlog heainit"
+h_heacore_components="cfitsio ape heaio heautils ahlog heainit"
 
 if test "$mpfit_required" = yes; then
   h_heacore_components="$h_heacore_components mpfit"
