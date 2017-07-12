@@ -2,7 +2,7 @@ HD_COMPONENT_NAME	= heacore
 
 HD_COMPONENT_VERS	=
 
-HD_SUBDIRS		= @h_components@ help refdata
+HD_SUBDIRS		= readline cfitsio ape heaio heautils ahlog heainit help refdata
 
 HD_TEST_SUBDIRS		= heautils
 

@@ -1,8 +1,8 @@
-HD_TOP_EXEC_PFX		= @exec_prefix@
-HD_SELECTED		= @HD_SELECTED@
+HD_TOP_EXEC_PFX		= /Users/areustle/nasa/fermi-heacore/x86_64-apple-darwin16.6.0
+HD_SELECTED		= heacore 
 HD_LN_S			= ln -s
 HD_CP_P			= cp -p
-BSUF			= @BSUF@
+BSUF			= 
 
 default: all
 
