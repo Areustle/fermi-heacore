@@ -6,5 +6,3 @@ export LDFLAGS="-L${PREFIX}/lib"
 ./configure --prefix=${PREFIX} --exec_prefix=${PREFIX}
 ./hmake HD_EXEC_PFX=${PREFIX} HD_TOP_EXEC_PFX=${PREFIX}
 ./hmake install HD_EXEC_PFX=${PREFIX} HD_TOP_EXEC_PFX=${PREFIX}
-./hmake HD_EXEC_PFX=${PREFIX} HD_TOP_EXEC_PFX=${PREFIX} test
-./hmake install HD_EXEC_PFX=${PREFIX} HD_TOP_EXEC_PFX=${PREFIX} install-test
