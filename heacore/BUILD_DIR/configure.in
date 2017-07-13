@@ -586,14 +586,14 @@ if test `echo $LIBS | grep -c '\-ldl'` -eq 0; then
 fi
 
 # Check for a terminal library:
-AC_CHECK_LIB(termcap, tgoto)
-if test `echo $LIBS | grep -c '\-ltermcap'` -eq 0; then
-  AC_CHECK_LIB(tinfo, tgoto)
-  if test `echo $LIBS | grep -c '\-ltinfo'` -eq 0; then
-    AC_CHECK_LIB(curses, tgoto)
-    if test `echo $LIBS | grep -c '\-lcurses'` -eq 0; then
-      AC_CHECK_LIB(ncurses, tgoto)
-      if test `echo $LIBS | grep -c '\-lncurses'` -eq 0; then
+AC_CHECK_LIB(ncurses, tgoto)
+if test `echo $LIBS | grep -c '\-lncurses'` -eq 0; then
+  AC_CHECK_LIB(curses, tgoto)
+  if test `echo $LIBS | grep -c '\-lcurses'` -eq 0; then
+    AC_CHECK_LIB(tinfo, tgoto)
+    if test `echo $LIBS | grep -c '\-ltinfo'` -eq 0; then
+      AC_CHECK_LIB(termcap, tgoto)
+      if test `echo $LIBS | grep -c '\-ltermcap'` -eq 0; then
         AC_MSG_ERROR(A terminal library is required!)
       fi
     fi
