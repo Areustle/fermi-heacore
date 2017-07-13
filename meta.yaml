@@ -10,6 +10,6 @@ build:
 
 requirements:
   build:
-    - readline
+    - conda-forge/readline
   run:
-    - readline
+    - conda-forge/readline
