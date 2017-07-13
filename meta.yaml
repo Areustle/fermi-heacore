@@ -1,6 +1,6 @@
 package:
    name: fermi-heacore
-   version: "0.0.3"
+   version: "0.0.4"
 
 source:
    git_url: https://github.com/Areustle/fermi-heacore.git
@@ -10,6 +10,6 @@ build:
 
 requirements:
   build:
-    - conda-forge/readline
+    - readline
   run:
-    - conda-forge/readline
+    - readline
