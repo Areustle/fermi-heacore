@@ -518,7 +518,7 @@ fi
 # the needs of selected headas components (order is important here):
 #-------------------------------------------------------------------------------
 
-h_heacore_components="ape heaio heautils heainit hoops"
+h_heacore_components="cfitsio ape heaio heautils heainit hoops"
 
 if test "$mpfit_required" = yes; then
   h_heacore_components="$h_heacore_components mpfit"
