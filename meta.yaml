@@ -11,5 +11,7 @@ build:
 requirements:
   build:
     - readline
+    - cfitsio
   run:
     - readline
+    - cfitsio
