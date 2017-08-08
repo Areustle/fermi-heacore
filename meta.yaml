@@ -10,8 +10,8 @@ build:
 
 requirements:
   build:
-    - readline
+    - readline=6.2-0
     - cfitsio
   run:
-    - readline
+    - readline=6.2-0
     - cfitsio
